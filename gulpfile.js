@@ -42,4 +42,4 @@ gulp.task('watchjs', function() {
     gulp.watch('assets/js/*.js', ['script']);
 });
 
-gulp.task('default', ['script', 'style', 'webserver', 'watch', 'watchjs'])
+gulp.task('default', ['script', 'style', 'webserver', 'watch', 'watchjs']);
