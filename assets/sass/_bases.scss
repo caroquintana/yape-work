@@ -21,24 +21,39 @@ body {
     background-color: $yellow-buttons;
     margin-top: 26px;
   }
-  .container-inputs{
-        padding-left: 10px;
+
+  .container-inputs {
+    padding-left: 10px;
   }
 }
+/*Disable button
+.disabled {
+  pointer-events: none;
+  background-color: #dfdfdf !important;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  color: #9f9f9f !important;
+  cursor: default;
+}*/
+
 
 
 /*Screen 2 */
-#validacion{
-img.responsive-img, {
+#validacion {
+  img.responsive-img,
+   {
     max-width: 100%;
     height: auto;
     margin: 5px;
-    padding:15px;
+    padding: 15px;
   }
 
-a {
+  a {
     background-color: transparent;
     color: #2bbbad;
- }
+  }
+  #accept-continue{
+    background-color: $yellow-buttons;
+  }
 }
 
