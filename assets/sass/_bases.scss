@@ -3,4 +3,23 @@
 	padding:0;
 	
 }
-
+/*MAI*/
+.screen5-body{
+	background-color: $yellow-buttons;
+	text-align: center;
+	color: $purple-number;
+	font-family: $font-familyOpen;
+	.done-circle{
+		border: 3px solid #49233b;
+	    border-radius: 100%;
+	    padding: 9px;
+		display: inline-block;
+		margin: 239px 0 6px 0;
+		i{
+			font-size: 45px;
+		}
+	}
+	p{
+		font-weight: 700;
+	}
+}
