@@ -1,0 +1,27 @@
+.contenedorcarousel{
+	width: 300px;
+	margin-top: 67px;
+}
+h1.indextitulo {
+    font-size: 34px;
+}
+.btnindex{
+	background-color: #fbd43b;
+}
+.btnindex:hover{
+	background-color: #f8f8f8;
+	color: gray;
+}
+.carousel .indicators .indicator-item.active{
+    background-color: #f64552;
+}
+.carousel .indicators .indicator-item{
+	background-color: #f64552;
+}
+.carousel.carousel-slider.center.initialized {
+    height: 400px;
+    height: 301px!important;
+}
+ul.indicators {
+    top: 266px;
+}
