@@ -1,7 +1,60 @@
-*{
-	margin:0;
-	padding:0;
-	
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+/*Screen 4*/
+#createUser {
+  img {
+    width: 42%;
+    margin-top: 30px;
+  }
+
+  h4 {
+    font-size: 1.28rem;
+  }
+
+  .yellow-button {
+    background-color: $yellow-buttons;
+    margin-top: 26px;
+  }
+
+  .container-inputs {
+    padding-left: 10px;
+  }
+}
+/*Disable button
+.disabled {
+  pointer-events: none;
+  background-color: #dfdfdf !important;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  color: #9f9f9f !important;
+  cursor: default;
+}*/
+
+
+
+/*Screen 2 */
+#validacion {
+  img.responsive-img,
+   {
+    max-width: 100%;
+    height: auto;
+    margin: 5px;
+    padding: 15px;
+  }
+
+  a {
+    background-color: transparent;
+    color: #2bbbad;
+  }
+  #accept-continue{
+    background-color: $yellow-buttons;
+  }
 }
 /*MAI*/
 .screen5-body{

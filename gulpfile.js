@@ -5,6 +5,7 @@ var sass = require('gulp-sass');
 var minifyCSS = require('gulp-minify-css');
 var webserver = require('gulp-webserver');
 
+
 gulp.task('script', function(){
 	gulp.src(['node_modules/jquery/dist/jquery.js','node_modules/materialize-css/dist/js/materialize.js','assets/js/*.js'])
 	.pipe(concat('script.js'))
@@ -33,4 +34,13 @@ gulp.task('watch', function(){
 	gulp.watch('assets/sass/*.scss',['style']);
 });
 
-gulp.task('default',['script','style','webserver','watch']);
+gulp.task('watchjs', function() {
+	gulp.watch('assets/js/*.js', ['script']);
+    gulp.watch('assets/css/*.css', ['style']);
+});
+
+gulp.task('watchjs', function() {
+    gulp.watch('assets/js/*.js', ['script']);
+});
+
+gulp.task('default', ['script', 'style', 'webserver', 'watch', 'watchjs']);
