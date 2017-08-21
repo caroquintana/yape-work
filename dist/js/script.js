@@ -20267,6 +20267,31 @@ $(document).ready(function () {
 });
 $(document).ready(function () {
     $('#sign-session').click(onLogin);//listener to button click
+    //hide password
+    (function ($) {
+        $.toggleShowPassword = function (options) {
+            var settings = $.extend({
+                field: "#password",
+                control: "#toggle_show_password",
+            }, options);
+
+            var control = $(settings.control);
+            var field = $(settings.field)
+
+            control.bind('click', function () {
+                if (control.is(':checked')) {
+                    field.attr('type', 'text');
+                } else {
+                    field.attr('type', 'password');
+                }
+            })
+        };
+    }(jQuery));
+
+    //call plugin
+    $.toggleShowPassword({
+        field: '#test1',
+    });
 });
 
 
@@ -20290,7 +20315,7 @@ function validateForm() {
         alert('Error en el email');
         valid = false;
     }
-    
+
     return valid;
 }
 // If validations are true, then go to movies.html and save it into 
