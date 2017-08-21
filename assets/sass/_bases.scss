@@ -1,6 +1,24 @@
-*{
-	margin:0;
-	padding:0;
-	
+* {
+  margin: 0;
+  padding: 0;
 }
 
+body {
+  font-family: 'Roboto', sans-serif;
+}
+/*Screen 4*/
+#createUser {
+  img {
+    width: 42%;
+    margin-top: 30px;
+  }
+
+  h4 {
+    font-size: 1.28rem;
+  }
+
+  .yellow-button {
+    background-color: $yellow-buttons;
+    margin-top: 26px;
+  }
+}
