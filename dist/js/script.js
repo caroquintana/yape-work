@@ -20254,6 +20254,38 @@ if (jQuery) {
 })(jQuery);
 
 $(document).ready(function () {
+    $("#accept-continue").attr('disabled', 'disabled');
+    $("#form-cellphone").keyup(validateCellphone);
+    $("#accept-continue").click(onLoginCellphone);
+
+    // On Click Of Submit Button
+    
+});
+
+function validateCellphone() {
+    $("#accept-continue").attr('disabled', 'disabled');
+    var cellphone = $("#number").val();
+    if (cellphone.length >= 9) {
+        // To Enable Submit Button
+        $("#accept-continue").removeAttr('disabled');
+        $("#accept-continue").css({
+            "cursor": "pointer",
+            "box-shadow": "1px 0px 6px #333"
+        });
+
+    }
+}
+function onLoginCellphone(){
+    $("#accept-continue").click(function () {
+        $("#accept-continue").css({
+            "cursor": "default",
+            "box-shadow": "none"
+        });
+        alert("Teléfono ingresado correctamente..!!");
+        window.location.href = 'screen3.html';
+    });
+}
+$(document).ready(function () {
   // Carousel
   $('.carousel.carousel-slider').carousel({fullWidth: true});
   	autoplay()   
@@ -20265,7 +20297,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
     $("#sign-session").attr('disabled', 'disabled');
-    $("form").keyup(validateForm);
+    $("#myform").keyup(validateForm);
     // On Click Of Submit Button
     $("#sign-session").click(onLogin);
 });
@@ -20289,13 +20321,6 @@ function validateForm(){
             }
         }
 }
-
-/*function onLogin() {
-    if (validateForm()) { //If validate form is True
-        $('#sign-session').prop('disabled', false);  
-        //$('.sign-session').removeAttr('disabled');       
-    }
-}*/
 function onLogin(){
     $("#sign-session").css({
             "cursor": "default",

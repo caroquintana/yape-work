@@ -1,6 +1,6 @@
 $(document).ready(function () {
     $("#sign-session").attr('disabled', 'disabled');
-    $("form").keyup(validateForm);
+    $("#myform").keyup(validateForm);
     // On Click Of Submit Button
     $("#sign-session").click(onLogin);
 });
@@ -24,13 +24,6 @@ function validateForm(){
             }
         }
 }
-
-/*function onLogin() {
-    if (validateForm()) { //If validate form is True
-        $('#sign-session').prop('disabled', false);  
-        //$('.sign-session').removeAttr('disabled');       
-    }
-}*/
 function onLogin(){
     $("#sign-session").css({
             "cursor": "default",
