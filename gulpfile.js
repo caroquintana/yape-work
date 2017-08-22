@@ -23,7 +23,7 @@ gulp.task('style', function(){
 gulp.task('webserver', function(){
 	gulp.src('../yape-work/')
 	.pipe(webserver({
-		fallback: 'index.html',
+		fallback: 'public/index.html',
 		livereload: true,
 		directoryListing: false,
 		open: true
