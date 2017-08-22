@@ -20262,7 +20262,8 @@ $(document).ready(function () {
 	    setTimeout(autoplay, 4500);
 	}   
 });
-	
+$(document).ready(function () {
+
 });
 $(document).ready(function () {
     $('#sign-session').click(onLogin);//listener to button click
@@ -20298,5 +20299,3 @@ function onLogin() {
         $("#sign-session").attr("href", "movies.html");
     }
 }
-
-
