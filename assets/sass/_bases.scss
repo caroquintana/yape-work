@@ -39,23 +39,26 @@ body {
 
 
 /*Screen 2 */
-#validacion {
-  img.responsive-img,
-   {
-    max-width: 100%;
-    height: auto;
-    margin: 5px;
-    padding: 15px;
-  }
+#validacion{
+.col {
+ img{
+ width: 40%;
+ padding-top:20px;
+}
+}
+input{
+margin-bottom:15px;
+}
+a {
+   background-color: transparent;
+   color: #2bbbad ;
+}
 
-  a {
-    background-color: transparent;
-    color: #2bbbad;
-  }
-  #accept-continue{
+#accept-continue{
     background-color: $yellow-buttons;
   }
 }
+
 /*MAI*/
 .screen5-body{
 	background-color: $yellow-buttons;
