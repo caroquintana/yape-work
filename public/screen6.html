@@ -9,30 +9,30 @@
 	<script src="https://use.fontawesome.com/fb4df1f3f2.js"></script>
 	<!-- Material Icon -->
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-	<link rel="stylesheet" href="public/css/style.min.css">
+	<link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
 	<section id="card">
 		<div class="row">
 			<div class="col s12 center">
-				<img src="public/img/bcp-logo.png" class="circle responsive-img" width="150x150">
+				<img src="img/bcp-logo.png" class="circle responsive-img" width="150x150">
 				<h5 solid>Registra tu tarjeta de débito BCP</h5>
 				<label>Por ahora sólo aceptamos cuentas de ahorro y/o corriente en soles</label>
-				<div class="row">
+				<div class="row formulario">
 					<form class="col s10">
-					<div class="row caja">
-						<div>
-							<img src="public/img/card.png" class="responsive-img left" width="20x20" alt="img-cellphome">
-							<input id="number" type="text" class="validate">
+						<div class="row caja">
+							<div>
+								<img id="img-s6" src="img/card.png" class="responsive-img left" width="20x20" alt="img-cellphome">
+								<input id="number" type="text" class="validate">
+							</div>
 						</div>
-					</div>
-					<div class="row">
-						<div>
-							<input type="checkbox" class="filled-in" id="filled-in-box" checked="checked" />
-							<a href="#">Escanear tarjeta.</a>
+						<div class="row">
+							<div>
+								<input type="checkbox" class="filled-in" id="filled-in-box" checked="checked" />
+								<a href="#">Escanear tarjeta.</a>
+							</div>
 						</div>
-					</div>
 					</form>
 				</div>
 				<div class="row">
@@ -44,12 +44,13 @@
 					<div class="col s6">
 						<label>Fecha de vencimiento</label>
 					</div>
-					<div class="col s3">
-						<input type="tel" placeholder="Mes">
+					<div class="col s5">
+						<input type="tel" placeholder="Mes" id="mes">
+						/
+						<input type="tel" placeholder="Año" id="ano">
+
 					</div>
-					<div class="col s3">
-						<input type="tel" placeholder="Año">
-					</div>
+
 				</div>
 			</div>
 		</div>
@@ -57,7 +58,7 @@
 
 
 
-	<script src="public/js/script.js"></script>
+	<script src="js/script.js"></script>
 </body>
 
 </html>
