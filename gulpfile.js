@@ -7,17 +7,17 @@ var webserver = require('gulp-webserver');
 
 
 gulp.task('script', function(){
-	gulp.src(['node_modules/jquery/dist/jquery.js','node_modules/materialize-css/dist/js/materialize.js','assets/js/*.js'])
+	gulp.src(['node_modules/jquery/public/jquery.js','node_modules/materialize-css/public/js/materialize.js','assets/js/*.js'])
 	.pipe(concat('script.js'))
-	.pipe(gulp.dest('dist/js/'));
+	.pipe(gulp.dest('public/js/'));
 });
 
 gulp.task('style', function(){
-	gulp.src(['node_modules/materialize-css/dist/css/materialize.css','assets/sass/main.scss'])
+	gulp.src(['node_modules/materialize-css/public/css/materialize.css','assets/sass/main.scss'])
 	.pipe(sass().on('error', sass.logError))
 	.pipe(minifyCSS())
 	.pipe(concat('style.min.css'))
-	.pipe(gulp.dest('dist/css/'));
+	.pipe(gulp.dest('public/css/'));
 });
 
 gulp.task('webserver', function(){
