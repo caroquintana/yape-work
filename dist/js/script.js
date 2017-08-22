@@ -20327,5 +20327,6 @@ function onLogin(){
             "box-shadow": "none"
         });
         alert("Datos creados exitosamente..!!");
+        //api call
         window.location.href = 'screen5.html';
 }
