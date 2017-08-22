@@ -29,22 +29,35 @@ body {
 
 /*Screen 2 */
 #validacion{
-img.responsive-img, {
-    max-width: 100%;
-    height: auto;
-    margin: 5px;
-    padding:15px;
-  }
+.col {
+  img{
+  width: 20px;
+  padding-top:20px;
+}
+}
+
+input{
+margin-bottom:15px;
+}
 
 a {
     background-color: transparent;
     color: #2bbbad;
  }
- img{
-  width: 50%;
- }
- img.responsive-img.left{
-  width:10%;
- }
 }
 
+
+/*Screen 6 */
+#card{
+  img #img-s6 {
+    width: 40%;
+    margin-top: 35px;
+  }
+}
+/*Screen 7 */
+#screen7{
+  img #img-s7 {
+    width: 40%;
+    margin-top: 35px;
+  }
+}
