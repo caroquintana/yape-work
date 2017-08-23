@@ -23,8 +23,10 @@ gulp.task('style', function(){
 gulp.task('webserver', function(){
 	gulp.src('../yape-work/')
 	.pipe(webserver({
-		fallback: 'puclic/index.html',
+		fallback: 'public/index.html',
 		livereload: true,
+		auto: false,
+		 port: 9000,
 		directoryListing: false,
 		open: true
 	}));
