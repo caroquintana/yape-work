@@ -58,7 +58,101 @@ a {
     background-color: $yellow-buttons;
   }
 }
-
+/*Screen 2 */
+#validacion{
+.col {
+  img{
+  width: 40%;
+  padding-top:20px;
+}
+}
+input{
+margin-bottom:15px;
+}
+a {
+    background-color: transparent;
+    color: #2bbbad;
+ }
+}
+/*Screen 6 */
+.formulario{
+  margin-left: 13%;
+}
+ #card #img-s6 {
+    width: 4%;
+    margin-top: 35px;
+    position: absolute;
+    margin-left: -30%;
+  }
+  #img-scan{
+    width: 7%;
+  }
+  #mes{
+  width:50%;
+  margin-left:-12%;
+}
+#ano{
+  width:50%;
+}
+.row .col.s12 {
+    width: 100%;
+    padding: 35px;
+}
+/*Screen 7 */
+.face{
+  background-color:#451E36;
+}
+#img-face {
+  width: 44%;
+  margin-top: 86px;
+  }
+h4{
+  color:white;
+}
+#img-eye{
+  width:5%;
+}
+.col p {
+  color: #20746f;
+  font-size: 15px;
+  margin-bottom: 16px;
+}
+.row .col.s6 {
+    width: 100%;
+    margin-left: auto;
+    left: auto;
+    right: auto;
+    color:white;
+}
+.row .col.s8 {
+    width: 65.666667%;
+    padding: 50px;
+}
+.row .col.s6.send{
+    width: 20%;
+    margin-left: 15%;
+    left: auto;
+    right: auto;
+    color: #fff;
+}
+.row .col.s6.scn{
+    width: 20%;
+    margin-left: 15%;
+    left: auto;
+    right: auto;
+    color: #fff;
+}
+#img-lg{
+  width: 42%;
+}
+.col p.txt{
+  color:white;
+  text-align:center;
+}
+/*Screen 6.1 */
+#foto{
+    width:42%;
+}
 /*MAI*/
 .screen5-body{
 	background-color: $yellow-buttons;
@@ -99,7 +193,54 @@ a {
 #ano{
   width:50%;
 }
+.containers7{
+	background-color: #38052A;
+	color: #fff;
+	height: 150vh;
+}
+.fa.fa-user-circle {
+    display: block;
+    text-align: right;
+    color: white;
+    margin-right: 24px;
+    margin-top: 18px;
+    font-size: 22px;
+}
+#img-face {
+    margin-top: 10px;
+}
+.mostrars7{
+	color: #09B599 !important;
+	margin-bottom: 20px;
+}
+#img-eye{
+	width: 23px;
+}
 
+.ultimos7{
+	padding-top: 7px;
+	padding-bottom: 7px;
+	margin-left: 20px;
+}
+.imgs7{
+	margin-left: 30px;
+}
+.lines7 {
+    margin-bottom: 20px;
+}
+i.fa.fa-angle-right {
+    margin-left: 71px;
+    color: white;
+    font-size: 20px;
+}
+
+#img-send, #img-scn {
+    width: 79px;
+}
+.texts7{
+	color: white!important;
+	margin-bottom: 40px;
+}
 /*Screen 7 */
 #screen7{
   img #img-s7 {
@@ -107,3 +248,4 @@ a {
     margin-top: 35px;
   }
 }
+

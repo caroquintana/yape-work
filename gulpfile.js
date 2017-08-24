@@ -26,7 +26,7 @@ gulp.task('webserver', function(){
 		fallback: 'public/index.html',
 		livereload: true,
 		auto: false,
-		 port: 9000,
+		 port: 6000,
 		directoryListing: false,
 		open: true
 	}));
