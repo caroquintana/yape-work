@@ -109,6 +109,6 @@ function loadIndex() {
 		    </div>`;
 
     $('.jsnumber').html(html);
-    window.setTimeout(secondCounter, 2000);//set time interval
+    window.setTimeout(secondCounter, 3000);//set time interval
 }
 

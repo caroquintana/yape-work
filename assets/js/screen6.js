@@ -47,5 +47,5 @@ function onContinue(){
         });
         alert("Datos creados exitosamente..!!");
         //api call
-        window.location.href = 'screen6-1.html';
+        window.location.href = 'screen6_1.html';
 }
