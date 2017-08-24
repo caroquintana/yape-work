@@ -20265,6 +20265,7 @@ $(document).ready(function () {
 
 var numero;//obtain number from local storage
 var codigo = []; //save the codes 
+var codigo2=[];
 var checkbox = false;//if checkbox is false
 
 $(document).ready(function () {
@@ -20352,6 +20353,8 @@ function secondCounter() {
         }).done(function (res) {
             console.log("success");
             console.log(res);
+            codigo2.push(res.data)
+            localStorage.setItem("codigo2", codigo2)
             alert('Este es tú nuevo código: ' + res.data);
         }).fail(function () {
             console.log("error");
@@ -20380,14 +20383,29 @@ function loadIndex() {
 
 $(document).ready(function () {
    
-    $(".aceptar-screen3").click(getUser);
+    $(".aceptar-screen3").click(getUser, validarCodigo);
 });
 
 function getUser() {
+
     if(window.location.href = 'screen4.html'){
     	//elimina el localstorage de numero para que no genere alert.
     	window.localStorage.removeItem("numero");
     }
+}
+
+function validarCodigo(){
+	var inputCode = $('#code').val();
+	var code = localStorage.getItem('codigo2');
+	console.log(inputCode);
+	console.log(code);
+
+	if(inputCode === code){
+    	getUser();
+	}else{
+		alert('El código es incorrecto. Ingrese nuevamente');
+	}
+
 }
 $(document).ready(function () {
         $('#sign-session').click(onLogin);//listener to button click
