@@ -10,7 +10,6 @@ $(document).ready(function () {
 
 });
 
-
 //obtain input number from client
 $("#number").keyup(function () {
     numero = $(this).val();
@@ -74,7 +73,7 @@ function validateCellphone() {
         });
     }
 }
-
+//Endpoint 2
 var timeoutID;
 function secondCounter() {
     if (numero != null) {

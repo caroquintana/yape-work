@@ -8,18 +8,24 @@ body {
 }
 /*Screen 4*/
 #createUser {
-  img {
-    width: 42%;
-    margin-top: 30px;
+  .lock{
+    img {
+    width: 62%;}
   }
-
+  form{
+    margin-top: -61px;
+img{
+  width: 59%;}
+  }
   h4 {
     font-size: 1.28rem;
+    color: black;
+        margin-top: -49px;
   }
 
   .yellow-button {
     background-color: $yellow-buttons;
-    margin-top: 26px;
+        margin-top: -101px;
   }
 
   .container-inputs {
@@ -196,7 +202,7 @@ h4{
 .containers7{
 	background-color: #38052A;
 	color: #fff;
-	height: 150vh;
+	height: 100vh;
 }
 .fa.fa-user-circle {
     display: block;
