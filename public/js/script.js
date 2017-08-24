@@ -20265,12 +20265,14 @@ $(document).ready(function () {
 
 var numero;//obtain number from local storage
 var codigo = []; //save the codes 
+var checkbox = false;//if checkbox is false
 
 $(document).ready(function () {
     $("#accept-continue").attr('disabled', 'disabled');//disabled button
     $("#accept-continue").click(getPhoneNumber); //if validations true
     $("#form-cellphone").keyup(validateCellphone);//validations
     $('.jsnumber').load(loadIndex());//charge the html class on loadindex
+
 });
 
 
@@ -20309,19 +20311,32 @@ function setPhone() {
         console.log("complete cellphone key");
     });
 }
+//listener to checkbox
+$("#test5").change(function () {
+    if ($(this).is(':checked')) {
+        // Checkbox is checked..
+        checkbox = true; //if checkbox is true is checked, validate
+        console.log("checked");
+        validateCellphone();
+    } else {
+        console.log("Not checked, validate again");
+        checkbox = false;//if checkbox is false is not checked, validate
+        validateCellphone();
+    }
+});
 //validations for cellphone only
 function validateCellphone() {
+    console.log('validate');
     $("#accept-continue").attr('disabled', 'disabled');
     var cellphone = $("#number").val();
-    var validateTerms = $("#filled-in-box").val();
-    if (cellphone.toString().length === 9) {
+    console.log(checkbox);
+    if ((cellphone.toString().length === 9) && (checkbox)) {
         // To Enable Submit Button
         $("#accept-continue").removeAttr('disabled');
         $("#accept-continue").css({
             "cursor": "pointer",
             "box-shadow": "1px 0px 6px #333"
         });
-
     }
 }
 
